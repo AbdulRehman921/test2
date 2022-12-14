@@ -19,7 +19,50 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.FormLayout")
+                .setHost(host,"xui_ui_formlayout1")
+                .setLeft("14.476190476190476em")
+                .setTop("12.19047619047619em")
+                .setWidth("26.20952380952381em")
+                .setHeight("20.419047619047618em")
+                .setLayoutData({
+                    "rows" : 5,
+                    "cols" : 5,
+                    "rowSetting" : {
+                        "1" : {
+                            "manualHeight" : 50
+                        },
+                        "2" : {
+                            "manualHeight" : 50
+                        },
+                        "3" : {
+                            "manualHeight" : 50
+                        },
+                        "4" : {
+                            "manualHeight" : 50
+                        },
+                        "5" : {
+                            "manualHeight" : 50
+                        }
+                    }
+                })
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button4")
+                .setLeft("22.095238095238095em")
+                .setTop("34.285714285714285em")
+                .setCaption("Button")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#FEDFFF"
+                    }
+                })
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
